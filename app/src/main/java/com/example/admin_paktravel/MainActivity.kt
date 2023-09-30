@@ -18,8 +18,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.logoutButton.setOnClickListener {
-            val intent= Intent(this,LoginActivity::class.java)
+            val intent= Intent(this,SignUpActivity::class.java)
             startActivity(intent)
+            finish()
         }
         binding.addvehicleButton.setOnClickListener {
             val intent= Intent(this,AddVehicleActivity::class.java)

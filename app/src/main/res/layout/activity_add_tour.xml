@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="@+id/backButton" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/tourName"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -65,41 +65,41 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
             <EditText
-                android:id="@+id/editTextDestination"
+                android:id="@+id/tourItinerary"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/edittextshape"
                 android:elevation="5dp"
                 android:fontFamily="@font/lato_regular"
-                android:hint="Enter Tour Destinations"
+                android:hint="Enter Tour Itinerary"
                 android:inputType="textMultiLine"
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText"
-                app:layout_constraintStart_toStartOf="@+id/editTextText"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintEnd_toEndOf="@+id/tourName"
+                app:layout_constraintStart_toStartOf="@+id/tourName"
+                app:layout_constraintTop_toBottomOf="@+id/tourName" />
 
             <EditText
-                android:id="@+id/editTextDuration"
+                android:id="@+id/tourInclusions"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/edittextshape"
                 android:elevation="5dp"
                 android:fontFamily="@font/lato_regular"
-                android:hint="Enter Tour Duration"
-                android:inputType="number"
+                android:hint="Enter Tour Inclusions"
+                android:inputType="textMultiLine"
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextDestination"
-                app:layout_constraintStart_toStartOf="@+id/editTextDestination"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDestination" />
+                app:layout_constraintEnd_toEndOf="@+id/tourItinerary"
+                app:layout_constraintStart_toStartOf="@+id/tourItinerary"
+                app:layout_constraintTop_toBottomOf="@+id/tourItinerary" />
 
             <EditText
-                android:id="@+id/editTextText1"
+                android:id="@+id/tourCost"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
@@ -111,43 +111,27 @@
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextDuration"
-                app:layout_constraintStart_toStartOf="@+id/editTextDuration"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDuration" />
+                app:layout_constraintEnd_toEndOf="@+id/tourInclusions"
+                app:layout_constraintStart_toStartOf="@+id/tourInclusions"
+                app:layout_constraintTop_toBottomOf="@+id/tourInclusions" />
 
             <EditText
-                android:id="@+id/editTextDeparture"
+                android:id="@+id/tourOperator"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/edittextshape"
                 android:elevation="5dp"
                 android:fontFamily="@font/lato_regular"
-                android:hint="Enter Tour Departure Dates"
-                android:inputType="text"
-                android:outlineSpotShadowColor="@color/textColor"
-                android:paddingLeft="15dp"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText1"
-                app:layout_constraintStart_toStartOf="@+id/editTextText1"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
-
-            <EditText
-                android:id="@+id/editTextBooking"
-                android:layout_width="0dp"
-                android:layout_height="57dp"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/edittextshape"
-                android:elevation="5dp"
-                android:fontFamily="@font/lato_regular"
-                android:hint="Enter Tour Booking Information"
+                android:hint="Enter Tour Operator"
                 android:inputType="textMultiLine"
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextDeparture"
-                app:layout_constraintStart_toStartOf="@+id/editTextDeparture"
-                app:layout_constraintTop_toBottomOf="@+id/editTextDeparture" />
+                app:layout_constraintEnd_toEndOf="@+id/tourCost"
+                app:layout_constraintStart_toStartOf="@+id/tourCost"
+                app:layout_constraintTop_toBottomOf="@+id/tourCost" />
+
 
             <EditText
                 android:id="@+id/selectImage"
@@ -165,9 +149,9 @@
                 android:paddingRight="15dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextBooking"
-                app:layout_constraintStart_toStartOf="@+id/editTextBooking"
-                app:layout_constraintTop_toBottomOf="@+id/editTextBooking" />
+                app:layout_constraintEnd_toEndOf="@+id/tourOperator"
+                app:layout_constraintStart_toStartOf="@+id/tourOperator"
+                app:layout_constraintTop_toBottomOf="@+id/tourOperator" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView10"
@@ -190,42 +174,9 @@
 
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/edittextshape"
-                android:fontFamily="@font/yeon_sung"
-                android:gravity="center_vertical"
-                android:paddingLeft="15dp"
-                android:text="Short Description"
-                android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/selectImage"
-                app:layout_constraintTop_toBottomOf="@+id/cardView10" />
-
-            <EditText
-                android:id="@+id/description"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:background="@color/white"
-                android:fontFamily="@font/lato_regular"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad "
-                android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/textView24"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView24"
-                app:layout_constraintTop_toBottomOf="@+id/textView24">
-
-            </EditText>
-
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/addItemButton"
+                android:id="@+id/addtourDataButton"
                 android:layout_width="157dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="32dp"
@@ -239,7 +190,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description">
+                app:layout_constraintTop_toBottomOf="@+id/cardView10">
 
             </androidx.appcompat.widget.AppCompatButton>
 
