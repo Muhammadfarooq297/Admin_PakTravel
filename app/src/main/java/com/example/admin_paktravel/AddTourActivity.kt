@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.emreesen.sntoast.SnToast
-import com.emreesen.sntoast.Type
 import com.example.admin_paktravel.Models.TourModel
 import com.example.admin_paktravel.databinding.ActivityAddTourBinding
 import com.google.firebase.auth.FirebaseAuth
