@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="@+id/backButton" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/roomTypeText"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginStart="8dp"
@@ -55,7 +55,7 @@
                 android:background="@drawable/edittextshape"
                 android:elevation="5dp"
                 android:fontFamily="@font/lato_regular"
-                android:hint="Enter Apartment Details"
+                android:hint="Enter Room Type "
                 android:inputType="text"
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
@@ -65,7 +65,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
             <EditText
-                android:id="@+id/editTextText1"
+                android:id="@+id/roomChargesText"
                 android:layout_width="0dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="24dp"
@@ -77,9 +77,9 @@
                 android:outlineSpotShadowColor="@color/textColor"
                 android:paddingLeft="15dp"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText"
-                app:layout_constraintStart_toStartOf="@+id/editTextText"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+                app:layout_constraintEnd_toEndOf="@+id/roomTypeText"
+                app:layout_constraintStart_toStartOf="@+id/roomTypeText"
+                app:layout_constraintTop_toBottomOf="@+id/roomTypeText" />
 
             <EditText
                 android:id="@+id/selectImage"
@@ -97,9 +97,9 @@
                 android:paddingRight="15dp"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextText1"
-                app:layout_constraintStart_toStartOf="@+id/editTextText1"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
+                app:layout_constraintEnd_toEndOf="@+id/roomChargesText"
+                app:layout_constraintStart_toStartOf="@+id/roomChargesText"
+                app:layout_constraintTop_toBottomOf="@+id/roomChargesText" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView10"
@@ -140,7 +140,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView10" />
 
             <EditText
-                android:id="@+id/description"
+                android:id="@+id/roomDescriptionText"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -170,10 +170,10 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description" />
+                app:layout_constraintTop_toBottomOf="@+id/roomDescriptionText" />
 
             <EditText
-                android:id="@+id/ingredients"
+                android:id="@+id/roomLocationsText"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -189,7 +189,7 @@
             </EditText>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/addItemButton"
+                android:id="@+id/addRoomButton"
                 android:layout_width="157dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="8dp"
@@ -202,8 +202,8 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/ingredients"
-                app:layout_constraintTop_toBottomOf="@+id/ingredients">
+                app:layout_constraintStart_toStartOf="@+id/roomLocationsText"
+                app:layout_constraintTop_toBottomOf="@+id/roomLocationsText">
 
             </androidx.appcompat.widget.AppCompatButton>
 

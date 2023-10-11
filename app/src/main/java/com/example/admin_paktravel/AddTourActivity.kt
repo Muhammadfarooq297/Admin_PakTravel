@@ -64,7 +64,7 @@ class AddTourActivity : AppCompatActivity() {
 
     private fun uploadData() {
         //get a reference to the "menu" node in the database
-        val tourRef=database.getReference("menu")
+        val tourRef=database.getReference("tours")
         //generate a unique key for the new menu item
         val newItemKey=tourRef.push().key
 
